@@ -11,15 +11,15 @@ logging.debug("This is a debug message")
 
 
 openai.api_type = "azure"
-openai.api_base = "https://openai-usea-n-it-01.openai.azure.com/"
+openai.api_base = "https://dhopenai.openai.azure.com/"
 openai.api_version = "2023-03-15-preview"
 
 openai.api_key = os.environ.get("OpenAI_Key")
 search_api_key = os.environ.get("Search_Admin_Key") #Cog search admin key
 
 #Cognitive Search Connection
-search_endpoint = "https://cogsearch-usea-n-it-01.search.windows.net"
-search_endpoint_for_creating_index = "https://cogsearch-usea-n-it-01.search.windows.net/indexes/compbotindex/docs/search?api-version=2023-07-01-Preview"
+search_endpoint = "https://dhcogsearch.search.windows.net"
+search_endpoint_for_creating_index = "https://dhcogsearch.search.windows.net/indexes/compbotindex/docs/search?api-version=2023-07-01-Preview"
 
 def createSearchRequest(user_question):
 #Create an embedding for the user question - skipped for now
