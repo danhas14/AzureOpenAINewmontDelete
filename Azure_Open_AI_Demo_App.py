@@ -58,6 +58,7 @@ def createSearchRequest(user_question):
     response = requests.post(url , headers=headers, data=json.dumps(search_json))
     st.write('url is ', url)
     st.write('request is ', json.dumps(search_json))
+    st.write(response.content)
     
     if response.status_code == 200:
         data = response.json()
