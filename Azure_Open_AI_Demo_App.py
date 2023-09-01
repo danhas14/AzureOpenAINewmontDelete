@@ -19,7 +19,7 @@ search_api_key = os.environ.get("Search_Admin_Key") #Cog search admin key
 
 #Cognitive Search Connection
 search_endpoint = "https://dhcogsearch.search.windows.net"
-search_endpoint_for_creating_index = "https://dhcogsearch.search.windows.net/indexes/compbotindex/docs/search?api-version=2023-07-01-Preview"
+search_endpoint_for_creating_index = "https://dhcogsearch.search.windows.net/indexes/purview-index-no-embeddings/docs/search?api-version=2023-07-01-Preview"
 
 def createSearchRequest(user_question):
 #Create an embedding for the user question - skipped for now
