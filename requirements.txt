@@ -1,0 +1,6 @@
+streamlit>=1.24.0
+langchain>=0.0.217
+openai
+streamlit-chat
+streamlit-extras
+azure-search-documents
