@@ -89,7 +89,7 @@ def createSearchRequest(user_question):
 
     addon_command = " Don't answer the question if you can't answer it using the text in the system message, just say 'I'm sorry, I don't have the answer to that question, can you please rephrase it?\" Don't say anything more after that."
     response = openai.ChatCompletion.create(
-    engine="gpt-35-turbo-16k",
+    engine="deployment-gpt-35-turbo-16k",
     messages = [{
             "role": "system",
             "content": f"You are an IT helpdesk bot. Try to answer the question based on the text that is given to you. Include all relevant information from the text. Text to look for an answer: {azure_search_response} "
